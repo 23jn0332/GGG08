@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<style>
+    input[type]{
+        height: 50px;
+    }
+</style>
+<title>新規登録またはログイン</title>
+</head>
+<body align="center">
+<font size="7"><a>しおり</a></font>
+<hr>
+<font size="7">
+<a>しおりのタイトル</a><input type ="text" name = "title" placeholder="例）たのしいたび" >
+<br>
+<input type ="text" name = "title"  size="5" placeholder="例）2024">年
+<select class="box">
+<script>  
+    for(cnt=1; cnt<=12; cnt++){
+        document.write('<option value="'+cnt+'">'+cnt+'月</option>');
+    }
+</script>
+</select>
+<select class="box">
+    <script>  
+        for(cnt=1; cnt<=31; cnt++){
+            document.write('<option value="'+cnt+'">'+cnt+'日</option>');
+        }
+    </script>
+    </select>~
+    <input type ="text" name = "title"  size="5" placeholder="例）2024">年
+<select class="box">
+<script>  
+    for(cnt=1; cnt<=12; cnt++){
+        document.write('<option value="'+cnt+'">'+cnt+'月</option>');
+    }
+</script>
+</select>
+<select name="day">
+    <script>  
+        for(cnt=1; cnt<=31; cnt++){
+            document.write('<option value="'+cnt+'">'+cnt+'日</option>');
+        }
+    </script>
+</select>
+<button onclick="location.href='(2-2)sioriMake.html'" class="login" type="button">作成</button>
+</font>
+</body>
+</html>
